@@ -131,7 +131,7 @@ alexaApp.intent('EmailConfirmIntent', function (request, response) {
              response.shouldEndSession(false);
              response.say(say.join('\n'));
          }).catch((err)=>{
-             say = ["<s> Something went wrong while processing your request.</s><s>Please try again</s>"];
+             var say = ["<s> Something went wrong while processing your request.</s><s>Please try again</s>"];
              response.shouldEndSession(true);
              response.say(say.join('\n'));				
      })     
@@ -144,7 +144,7 @@ alexaApp.intent('EmailConfirmIntent', function (request, response) {
              response.shouldEndSession(true);
              response.say(say.join('\n'));
          }).catch((err)=>{
-             say = ["<s> Something went wrong while processing your request.</s><s>Please try again</s>"];
+             var say = ["<s> Something went wrong while processing your request.</s><s>Please try again</s>"];
              response.shouldEndSession(true);
              response.say(say.join('\n'));				
      })
