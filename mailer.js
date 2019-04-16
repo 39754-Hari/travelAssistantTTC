@@ -9,7 +9,7 @@ var mailer = {
 				service: 'gmail',
 				auth: {
 					user: 'hexatestmailer@gmail.com',
-					pass: 'a###W14&$'
+					pass: 'Hexaware@987'
 				}
 			});
 			var fileName = 'Target-audience.xlsx';
